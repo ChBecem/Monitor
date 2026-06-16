@@ -1,0 +1,32 @@
+{
+  "entities": {
+    "BabySession": {
+      "title": "BabySession",
+      "description": "Session temps réel de surveillance de bébé",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "status": { "type": "string" },
+        "babyDeviceName": { "type": "string" },
+        "batteryLevel": { "type": "number" },
+        "noiseLevel": { "type": "number" },
+        "isCrying": { "type": "boolean" },
+        "nightlightActive": { "type": "boolean" },
+        "nightlightColor": { "type": "string" },
+        "flashlightActive": { "type": "boolean" },
+        "activeLullaby": { "type": "string" },
+        "parentSpeaking": { "type": "boolean" },
+        "streamFrame": { "type": "string" },
+        "babyDeviceId": { "type": "string" },
+        "parentDeviceId": { "type": "string" }
+      },
+      "required": ["id", "status", "babyDeviceName", "babyDeviceId"]
+    }
+  },
+  "firestore": {
+    "sessions/{sessionId}": {
+      "schema": "BabySession",
+      "description": "Collection of real-time baby monitor pairing sessions"
+    }
+  }
+}

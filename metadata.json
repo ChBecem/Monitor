@@ -1,0 +1,6 @@
+{
+  "name": "Apyrox Baby Monitor",
+  "description": "Application de surveillance bébé en temps réel (Station Bébé et Station Parent) avec de vrais flux vidéo et audio, capteur de niveau sonore et berceuses de réconfort.",
+  "requestFramePermissions": ["camera", "microphone"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
